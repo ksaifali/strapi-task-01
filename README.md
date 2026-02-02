@@ -1,61 +1,108 @@
-# 🚀 Getting started with Strapi
+# TASK-1 – Strapi Local Setup
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
-
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+This repository contains a local Strapi setup completed as part of **TASK-1**.
+The objective was to explore the Strapi codebase, run Strapi locally, start the Admin Panel, and create a sample content type.
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## 📌 Objectives Completed
+
+- Cloned the official Strapi repository for exploration
+- Explored the Strapi project folder structure
+- Created and ran a Strapi application locally
+- Started the Strapi Admin Panel
+- Created a sample content type using Content-Type Builder
+- Pushed the setup to GitHub
+
+---
+
+## 🧩 Strapi Repository Exploration
+
+The official Strapi repository was cloned from:
+
+https://github.com/strapi/strapi
+
+
+Key folders explored:
+
+- `packages/` – Core Strapi framework modules
+- `docs/` – Documentation source
+- `scripts/` – Build and automation scripts
+- `tests/` – Test suites
+- `package.json` – Monorepo configuration
+
+> Note: The Strapi core repository is a framework and does not directly run a CMS instance.
+
+---
+
+## 🚀 Running Strapi Locally
+
+A Strapi application was created using the official CLI:
+
+```bash
+npx create-strapi-app my-strapi-app
+cd my-strapi-app
+npm run develop
+
+Admin Panel
+
+URL: http://localhost:1337/admin
+
+Admin panel runs in development mode with hot reload enabled
+Sample Content Type
+
+A Single Type named About was created using the Content-Type Builder.
+
+Fields:
+
+title – Text
+
+blocks – Dynamic Zone
+
+Components used:
+
+Rich Text
+
+Media
+
+Quote
+
+Slider
+
+This demonstrates Strapi’s support for flexible and reusable content modeling.
+vailable Scripts
+npm run develop   # Start Strapi in development mode
+npm run start     # Start Strapi in production mode
+npm run build     # Build the admin panel
+npm run deploy    # Deploy the Strapi application
+itHub Repository
+
+This repository contains the complete local Strapi setup for TASK-1.
+
+🚀 Getting Started with Strapi (Official)
+
+Strapi comes with a full featured Command Line Interface (CLI) which lets you scaffold and manage your project in seconds.
+
+develop
+
+Start your Strapi application with autoReload enabled.
+
+npm run develop
+# or
+yarn develop
+
+start
+
+Start your Strapi application without autoReload.
+
+npm run start
+# or
+yarn start
+
+build
+
+Build your admin panel.
+
+npm run build
+# or
+yarn build
